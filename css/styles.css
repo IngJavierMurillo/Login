@@ -1,0 +1,179 @@
+/*================ Cuerpo ================*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	width: 100%;
+	height: 100vh;
+	display:flex;
+	justify-content: center;
+	background-image: url("../img/Fondo_PagWeb.svg");
+	background-color: #142740;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+h1, h2, h3, .Formulario, .Boton--Crear{
+	font-family: 'Varela', sans-serif;
+}
+/*================ Barra ================*/
+.BarraHeader{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.Barra{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.BarT{
+	text-decoration: none;
+	color: #FFE2F2;
+	font-family: 'Varela', sans-serif;
+	font-weight: 900;
+	font-size: 2em;
+	-webkit-text-stroke: 0.1px #8563A6;
+}
+.BarT:hover{
+	color: #5B2A8C;
+	cursor: pointer;
+}
+.NavbarImg{
+	display: flex;
+	justify-content: center;
+	width: 10%;
+}
+.NavbarLogo{
+	width: 100%;
+}
+/*================ Estilos ================*/
+.Boton,intput[type="submit"],intput[type="reset"]{
+	background-color: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+h1{
+	font-weight: 600;
+	font-size: 40px;
+}
+.Formulario, .Boton--Sesion, {
+	font-weight: 300;
+}
+
+a{
+	text-decoration: none;
+	color: aqua;
+}
+a:hover{
+	color: #5B2A8C;
+	cursor: pointer;
+}
+/*================ Main ================*/
+.Main{
+	padding: 8% 1.25rem 1.25rem 1.25rem;
+	min-width: 30rem;
+	max-width: 40rem;
+	width: 100%;
+	color: #E8F29B;
+}
+.Main > *{
+	margin: 20px 0px;
+}
+.Main__Titulos > h1 > span{
+	color: aqua;
+}
+.Formulario{
+	margin: 1.25rem 0;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 15px;
+}
+.Formulario > *{
+	position: relative;
+	margin: 5px;
+	width: 100%;
+}
+.Formulario__Fied--r1{
+	display: inline-block;
+}
+.Formulario__Fied--c2{
+	width: calc(100% / 2 - 20px);
+}
+/*================ Estilo de Formulario ================*/
+.Formulario__Fied > *, .Formulario__Fied--c2 > *{
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+}
+.Formulario__Fied:hover > .Formulario__Label--top, .Formulario__Fied--c2:hover > .Formulario__Label--top{
+	color: skyblue;
+}
+.Formulario__Fied:hover > .Formulario__input, .Formulario__Fied--c2:hover > .Formulario__input{
+	border-color: aqua;
+}
+.Formulario__input{
+	border: 2px solid #FFF;
+	border-radius: 15px;
+	font-family: inherit;
+	font-size: inherit;
+	color: #FFF;
+	padding: 0.5rem;
+	background: aqua;
+}
+.Formulario__Boton{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Formulario_Boton > *{
+	padding: 5px 0;
+}
+.Boton__Crear{
+	margin: 10px 0;
+	height: 2.5rem;
+	width: 100%;
+	background-color: aqua;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*================ Dispositivos ================.*/
+@media (min-width:  400px){
+	.Main{
+		padding: 10% 1.25rem 1.25rem 1.25rem;
+	}
+}
+@media (min-width:  768px){
+	.Main{
+		padding: 8% 1.25rem 1.25rem 1.25rem;
+	}
+}
+@media (min-width:  992px){
+	.Main{
+		padding: 5% 1.25rem 1.25rem 1.25rem;
+	}
+}
+@media (min-width:  1080px){
+	
+}
+@media (min-width:  1400px){
+
+}
